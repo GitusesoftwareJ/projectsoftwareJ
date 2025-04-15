@@ -32,7 +32,7 @@ tr, td {
     padding: 10px;
 }
 
-/* Allow manual movement using CSS only */
+
 .move-up {
     margin-top: -20px;
 }
