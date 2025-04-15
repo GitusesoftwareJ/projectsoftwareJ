@@ -1,37 +1,72 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account for the club.</p>
-    <hr>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Club Member Registration</title>
+    <link rel="stylesheet" href="client.css"> 
+</head>
+<body>
+    <h2>Club Member Registration</h2>
+    <form>
+        <table border="1">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="full_name"></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Club Interest:</td>
+                <td>
+                    <select name="interest">
+                        <option value="music">Music</option>
+                        <option value="sports">Sports</option>
+                        <option value="arts">Arts</option>
+                        <option value="science">Science</option>
+                        <option value="debate">Debate Club</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Membership Type:</td>
+                <td>
+                    <select name="membership_type">
+                        <option value="normal">Normal</option>
+                        <option value="vip">VIP</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Membership Duration:</td>
+                <td>
+                    <select name="membership_duration">
+                        <option value="1_year">1 Year</option>
+                        <option value="2_years">2 Years</option>
+                        <option value="3_years">3 Years</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Payment Type:</td>
+                <td>
+                    <select name="payment_type">
+                        <option value="normal">Normal</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Contact Number:</td>
+                <td><input type="text" name="contact"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
 
-    <label for="email"><b>Customer Email</b></label>
-    <input type="text" placeholder="Enter Customer Email" name="email" id="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-
-    <label for="duration"><b>Membership Duration</b></label>
-    <input type="number" placeholder="Enter Duration" name="duration" id="duration" required min="1">
-
-    <label for="interest"><b>Activity Interest</b></label>
-    <input type="text" placeholder="Enter Activity of Interest" name="interest" id="interest" required>
-
-    <label for="age"><b>Customer Age</b></label>
-    <input type="number" placeholder="Enter Age" name="age" id="age" required min="18" max="100">
-
-    <label for="payment"><b>Customer Payment</b></label>
-    <input type="number" placeholder="Enter Payment Amount" name="payment" id="payment" required>
-
-    <hr>
-
-    <p>By creating an account, you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-</form>
+    <script src="clientscript.js"></script>
+</body>
+</html>
