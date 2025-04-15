@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f8;
+    padding: 20px;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+tr, td {
+    position: relative;
+    padding: 10px;
+}
+
+/* Allow manual movement using CSS only */
+.move-up {
+    margin-top: -20px;
+}
+
+.move-down {
+    margin-top: 20px;
+}
+
+.move-left {
+    margin-left: -20px;
+}
+
+.move-right {
+    margin-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
