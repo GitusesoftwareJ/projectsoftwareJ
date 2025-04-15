@@ -67,7 +67,7 @@
         </table>
     </form>
 
-    <!-- Link to external JavaScript file -->
+   
     <script src="clientscript.js"></script>
 </body>
 </html>
